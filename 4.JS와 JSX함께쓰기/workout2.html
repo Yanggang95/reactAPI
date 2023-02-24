@@ -33,7 +33,7 @@
         const [items, setItems] = React.useState([
           { id: 1, name: "벤치프레스", count: 0 },
           { id: 2, name: "랫풀다운", count: 0 },
-          { id: 3, name: "스쿼드", count: 0 },
+          { id: 3, name: "스쿼트", count: 0 },
         ]);
         return (
           <>
@@ -57,6 +57,7 @@
         );
       };
       const onClick = (item) => {
+        
         console.log(`onClick호출 ===> ${item.name} ${item.count}`);
       };
       const element = (
@@ -68,7 +69,3 @@
     </script>
   </body>
 </html>
-
-<!-- 텍스트가 대문자로 시작이되면 h1을 적용 소문자로 시작하면 h3로 적용 -->
-<!-- 1~5 홀수 작게 짝수 크게-->
-<!-- 선택된것만 h1 , 나머지 h3-->
